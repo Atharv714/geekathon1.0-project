@@ -55,7 +55,7 @@
         </a>
 
         <a href="#" class="logo">
-          <img src="./assets/images/image.jpg" alt="BlueOrbit logo">
+          <img src="./assets/images/image.jpg" width="193" height="52" alt="BlueOrbit logo">
         </a>
 
         <div class="header-btn-group">
@@ -103,7 +103,7 @@
           <div class="navbar-top">
 
             <a href="#" class="logo">
-              <img src="./assets/images/logo-blue.svg" alt="BlueOrbit logo">
+              <img src="./assets/images/final.jpg" alt="BlueOrbit logo">
             </a>
 
             <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
@@ -131,6 +131,10 @@
             </li>
 
             <li>
+              <a href="#package" class="navbar-link" data-nav-link>AI Explorer</a>
+            </li>
+
+            <li>
               <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
             </li>
 
@@ -151,18 +155,54 @@
 
   <main>
     <article>
-
       <!-- 
-        - #HERO
+        - #TOUR SEARCH
       -->
+
+      <!-- <section class="tour-search">
+        <div class="container">
+
+          <form action="" class="tour-search-form">
+
+            <div class="input-wrapper">
+              <label for="destination" class="input-label">Search Destination*</label>
+
+              <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
+                class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="people" class="input-label">Travelers*</label>
+
+              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkin" class="input-label">Check-in Date**</label>
+
+              <input type="date" name="checkin" id="checkin" required class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkout" class="input-label">Check-out Date*</label>
+
+              <input type="date" name="checkout" id="checkout" required class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">Inquire now</button>
+
+          </form>
+
+        </div>
+      </section> -->
 
       <section class="hero" id="home">
         <div class="container">
 
-          <h2 class="h1 hero-title" style="z-index: 100; margin-top: 150px; text-align: center;">Journey to explore world</h2>
+          <h2 class="h1 hero-title" style="z-index: 100; margin-top: 150px; text-align: center; font-family: 'poppins';">Journey to <span class="h2_own">explore world</span></h2>
 
           <p class="hero-text" style="text-align: center;">
-            "Take only memories, leave no footprints"
+            "TAKE ONLY MEMORIES, LEAVE NO FOOTPRINTS."
           </p>
 
           <div class="btn-group">
@@ -188,6 +228,7 @@
 
               <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
                 class="input-field">
+              <div id="autocomplete-list" class="autocomplete-list"></div>
             </div>
 
             <div class="input-wrapper">
@@ -197,7 +238,7 @@
             </div>
 
             <div class="input-wrapper">
-              <label for="checkin" class="input-label">Check-in Date**</label>
+              <label for="checkin" class="input-label">Check-in Date*</label>
 
               <input type="date" name="checkin" id="checkin" required class="input-field">
             </div>
@@ -233,113 +274,56 @@
             "Traveling, it leaves you speechless, then turns you into a storyteller."
           </p>
 
-          <ul class="popular-list">
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Italy</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">San miguel</a>
-                  </h3>
-
-                  <p class="card-text">
-                    "Rome is a poem pressed into service as a city."
-                  </p>
-
-                </div>
-
+          <div class="wrapper">
+            <div class="card">
+              <div class="poster"><img src="./assets/images/popular-1.jpg" alt="italy image"></div>
+              <div class="details">
+                <h1 style="font-family: 'Varela Round' !important;">San Miguel</h1>
+                <h2 style="font-family: 'Varela Round' !important;">Italy • Fashion Capital • Stars: 4.3/5</h2>
+                <p class="desc" style="font-family: 'varela round' !important;">
+                  Italy, in Southern Europe, captivates with historic landmarks, art, exquisite cuisine, and breathtaking landscapes.
+                </p>
               </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Dubai</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Burj khalifa</a>
-                  </h3>
-
-                  <p class="card-text">
-                    "I’m in a good place right now. Not emotionally, I’m just on the Burj Khalifa."
-                  </p>
-
-                </div>
-
+            </div>
+            <div class="card">
+              <div class="poster"><img src="./assets/images/popular-2.jpg" alt="Bhurj Khalif"></div>
+              <div class="details">
+                <h1 style="font-family: 'Varela Round' !important;">Bhurj Khalifa</h1>
+                <h2 style="font-family: 'Varela Round' !important;">Dubai • Tallest Building • Stars: 4.6/5</h2>
+                <p class="desc" style="font-family: 'Varela Round' !important;">
+                  The Burj Khalifa, in Dubai, stands as the world's tallest skyscraper, symbolizing architectural brilliance amid a modern skyline.
+                </p>
               </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Japan</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Kyoto temple</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Never coming home. Staying in Kyoto forever.
-                  </p>
-
-                </div>
-
+            </div>
+            <div class="card">
+              <div class="poster"><img src="./assets/images/popular-3.jpg" alt="Kyoto Temple"></div>
+              <div class="details">
+                <h1 style="font-family: 'Varela Round' !important;">Kyoto Temple</h1>
+                <h2 style="font-family: 'Varela Round' !important;">Japan • Temple • Stars: 4.4/5</h2>
+                <p class="desc" style="font-family: 'Vareka Round' !important;">
+                  Kyoto, Japan, is renowned for its historic temples, such as Kinkaku-ji (Golden Pavilion) and Fushimi Inari Taisha, known for stunning architecture and serene gardens.
+                </p>
               </div>
-            </li>
+            </div>
+            </div>
+            <!-- <div class="card">
+              <div class="poster"><img src="assets/dollar-bg.avif" alt="Location Unknown"></div>
+              <div class="details">
+                <h1 style="font-family: 'Varela Round' !important;">Free of Cost</h1>
+                <h2 style="font-family: 'Varela Round' !important;">Free</h2>
+                <p class="desc" style="font-family: 'Quicksand' !important;">
+                  Notes and lectures will be free of cost, as I aim to contribute to Code with Harry aim to make learning
+                  programming for free
+                </p>
+              </div>
+            </div> -->
+          </div>
+        </section>
+      </div>
 
-          </ul>
-
+         <center>
           <button class="btn btn-primary">More destinations</button>
+        </center>
 
         </div>
       </section>
@@ -585,13 +569,98 @@
       <section>
         <h1 class="h2 section-title">Feeling Lucky ?</h1>
         <p class="section-text">Check out our Personalised Destination</p>
-       
-        <p class="codepen" data-theme-id = "24311" data-height="800" data-default-tab="result" data-slug-hash="zYepXgw" data-user="bryanfury05">
-          <span>See the Pen <a href="https://codepen.io/bryanfury05/pen/zYepXgw">
-          HTML Booking Form</a> by BryanFury (<a href="https://codepen.io/bryanfury05">@bryanfury05</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span>
-        </p>
-        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+       <center>
+
+         <section>
+           <div class="input-wrapper">
+             <label for="age" class="input-label">Age</label>
+             <input type="number" name="age" id="age" required placeholder="Enter Age" class="input-field">
+           </div>
+         
+           <div class="input-wrapper">
+             <label for="budget" class="input-label">Budget</label> 
+             <input type="number" name="budget" id="budget" required placeholder="Enter Budget" class="input-field">
+           </div>
+         
+           <div class="input-wrapper">
+             <label for="transport" class="input-label">Transport</label>
+             <input type="number" name="transport" id="transport" required placeholder="Transport Cost" class="input-field">
+           </div>
+         
+           <div class="input-wrapper">
+             <label for="duration" class="input-label">Duration</label>
+             <input type="number" name="duration" id="duration" required placeholder="Duration of Stay" class="input-field">
+           </div>
+         <br>
+           <button onclick="getRecommendedDestination()" style="color:white; background-color: hsl(235, 100%, 70%); padding:10px 15px 10px 15px; border-radius: 6px;">Get Recommended Destination</button>
+           <br>
+         
+           <h1 style="font-size: 32px;" id="recommendedDestination"></p>
+         
+           <script>
+             function getRecommendedDestination() {
+  var age = parseInt(document.getElementById("age").value);
+  var budget = parseInt(document.getElementById("budget").value);
+  var transport = parseInt(document.getElementById("transport").value);
+  var duration = parseInt(document.getElementById("duration").value);
+  var recommendedDestination = document.getElementById("recommendedDestination");
+
+  var countries = [
+    "USA",
+    "Spain",
+    "France",
+    "Italy",
+    "Japan",
+    "Australia",
+    "Canada",
+    "Germany",
+    "Brazil",
+    "Netherlands"
+  ];
+
+  var randomIndex = Math.floor(Math.random() * countries.length);
+  var selectedCountry = countries[randomIndex];
+
+  var outputText = "";
+
+  if  (budget < 10000 && transport < 100000000 && duration >= 1) {
+    outputText = "Domestic Travel is suggested for you";
+  }  else if (age<=17) {
+    outputText = "ADULT SUPERVISION IS REQUIRED";
+  }  else if (budget < 20000 && transport < 100000000 && duration < 2000) {
+    outputText = "Vietnam";
+  }  else if (budget < 30000 && transport < 100000000 && duration < 14) {
+    outputText = "Bhutan";
+  }  else if (budget < 40000 && transport < 100000000 && duration < 14) {
+    outputText = "Sri Lanka";
+  }  else if (budget < 50000 && transport < 100000000 && duration < 14) {
+    outputText = "combodia";
+  }  else if (budget < 60000 && transport < 100000000 && duration < 14) {
+    outputText = "Dubai";
+  }  else if (budget < 70000 && transport < 100000000 && duration < 14) {
+    outputText = "Belgium";
+  }  else if (budget < 90000 && transport < 100000000 && duration < 14) {
+    outputText = "Italy";
+  }  else if (budget < 100000 && transport < 100000000 && duration < 14) {
+    outputText = "France";
+  }  else if (budget > 110000 && transport < 100000000 && duration < 14) {
+    outputText = "Usa";
+   } else if (budget < 35000 && transport < 500 && duration < 7) {
+    outputText = "Indonesia";
+    
+  } else {
+    outputText = selectedCountry;
+  }
+
+  if (age < 18) {
+    outputText += ", but you might need parental guidance!";
+  }
+
+  recommendedDestination.textContent = outputText;
+}
+           </script>
+         </section>
+       </center>
   
       </section>
       <!-- 
@@ -665,6 +734,14 @@
       </section>
 
     </article>
+
+    <div id="popup">
+      <h2>Question: What is the capital of France?</h2>
+      <p id="result"></p>
+    </div>
+    
+    
+
   </main>
 
  <!-- 
@@ -679,7 +756,7 @@
         <div class="footer-brand">
 
           <a href="#" class="logo">
-            <img src="./assets/images/image.jpg" alt="BlueOrbit logo">
+            <img src="./assets/images/final.jpg" alt="BlueOrbit logo">
           </a>
 
           <p class="footer-text">
@@ -701,7 +778,7 @@
             <li class="contact-item">
               <ion-icon name="call-outline"></ion-icon>
 
-              <a href="tel:+01123456790" class="contact-link">+91 9214343673</a>
+              <a href="tel:+919214343673" class="contact-link">+91 9214343673</a>
             </li>
 
             <li class="contact-item">
@@ -791,6 +868,23 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(showPopup, 2000); // Show popup after 5 seconds
+    setTimeout(closePopup, 6000); // Close popup after 10 seconds
+  });
+
+  function showPopup() {
+    document.getElementById('popup').style.display = 'block';
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+
+  </script>
+  
 
 </body>
 
