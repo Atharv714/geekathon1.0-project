@@ -36,10 +36,10 @@ Worked as a team and developed a user-friendly, easy-to-use website which helps 
 1.	Canva
 
 ## THINGS TO LOOK OUT FOR
-1.	Animation is the background for frontend.
+1.	Made an AI/ML program to give user a personalized travel destination with budget, transportation modes and duration as inputs.
 1.	Drop-down menus.
 1.	Embedded Calendar.
-1.	Made an AI/ML program to give user a personalized travel destination with budget, transportation modes and duration as inputs.
+1.	Animation is the background for frontend.
 1.	Integrated Google maps.
 1.	Made Hover effects to make the website more attractive.
 1.	Added a quiz for SEO and more traction for the website.
