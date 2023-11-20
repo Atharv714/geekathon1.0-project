@@ -30,6 +30,7 @@ Worked as a team and developed a user-friendly, easy-to-use website which helps 
 1.	CSS
 1.	JAVA
 1.	ML
+1.	Data Analysis
 1.	Python
 1.	Adobe Photoshop
 1.	Adobe Illustrator
